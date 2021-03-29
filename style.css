@@ -20,7 +20,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header {
     text-align: center;
@@ -45,16 +45,16 @@
 }
 
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 li, .title {
-  list-style:none;
+  list-style: none;
 }
 
-input,button{
-  outline:none;
+input,button {
+  outline: none;
 }
 
 .btn {
@@ -139,7 +139,7 @@ input,button{
   width: 226px;
 }
 
-.task__item >    .input__edit {
+.task__item > .input__edit {
     width: 226px
 }
 
@@ -165,14 +165,14 @@ input,button{
 
 /* Edit Task */
 .task__item .input__edit {
-  display:none
+  display: none
 }
 
 .edit-mode .input__edit {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .edit-mode .task-text-label {
-  display:none;
+  display: none;
 }
