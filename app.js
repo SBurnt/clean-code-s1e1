@@ -18,7 +18,8 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-
+    listItem.className='task__item';
+    
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
     //label
@@ -33,17 +34,19 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='task-text';
+    label.className='task-text task-text-label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className="input__checkbox";
     editInput.type="text";
-    editInput.className="task-text";
+    editInput.className="task-text input__edit";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit";
+    editButton.className="btn edit";
 
-    deleteButton.className="delete";
+    deleteButton.className="btn delete";
+    deleteButtonImg.className="ico-delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
